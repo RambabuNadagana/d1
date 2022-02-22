@@ -8,7 +8,7 @@ resource "aws_launch_template" "example" {
 }
 
 resource "aws_autoscaling_group" "example" {
-  availability_zones = ["us-east-2a"]
+  availability_zones = ["us-east-2b"]
   desired_capacity   = 1
   max_size           = 1
   min_size           = 1
