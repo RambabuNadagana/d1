@@ -3,7 +3,7 @@ node('main'){
        git branch: 'main', url:'https://github.com/RambabuNadagana/d1.git'
         sh "ls"
     }
-    stage('ec2&rds launching'){
+    stage('projectfile'){
         sh "terraform init"
         sh "terraform plan"
         sh "terraform apply -auto-approve"
